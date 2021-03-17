@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>飲品調查</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand"><img src="drink-1.png" width="64px" height="64px"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">習慣的飲品</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="index.html">手搖杯</a>
+                        <a class="dropdown-item" href="index-2.html">咖啡</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">飲料習慣調查問卷</h1>
+            <p class="lead">夏日將近，很多人開始有了喝飲料的習慣，我們想調查這項習慣而有了本問卷</p>
+            <hr class="my-2">
+            <p>更多資訊</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="index-3.html" role="button">請點我</a>
+            </p>
+        </div>
+    </div>
+    <div style="margin:30px;">
+        <form action="check.php" method="post">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="M" checked>
+                    男性
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="W">
+                    女性
+                </label>
+            </div>
+            <div class="form-group" style="width:170px;">
+                <label for="date">生日</label>
+                <input type="date" name="date" id="date" class="form-control" placeholder="" aria-describedby="helpId">
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 紅茶
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input ml-2" type="checkbox" name="" id="" value="checkedValue"> 綠茶
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input ml-2" type="checkbox" name="" id="" value="checkedValue"> 奶茶
+                </label>
+            </div>
+            <div class="form-group" style="width: 250px;">
+                <label for="">頻率</label>
+                <select class="form-control" name="degree" id="">
+                    <option value="4">一天2次</option>
+                    <option value="3">三天1次</option>
+                    <option value="2">七天1次</option>
+                    <option value="1">小孩才喝飲料，老子只喝白開水</option>
+                </select>
+            </div>
+            <div class="form-group" style="width: 600px;">
+                <label for="msg">留言</label>
+                <textarea class="form-control" name="msg" id="msg" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Sub</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
